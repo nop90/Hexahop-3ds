@@ -83,7 +83,7 @@ void InitScreen()
 	realScreen = SDL_SetVideoMode(
 		SCREEN_W, SCREEN_H, // Width, Height
 		16, // Current BPP
-//		SDL_HWSURFACE | (fullscreen ? SDL_FULLSCREEN : 0) | SDL_BOTTOMSCR | SDL_CONSOLETOP);
+//		SDL_HWSURFACE | (fullscreen ? SDL_FULLSCREEN : 0));
 		SDL_HWSURFACE | (fullscreen ? SDL_FULLSCREEN : 0) | SDL_TOPSCR | SDL_CONSOLEBOTTOM);
 #endif
 
@@ -159,7 +159,7 @@ int main(int /*argc*/, char * /*argv*/[])
 	SDL_N3DSKeyBind(KEY_CPAD_RIGHT|KEY_CSTICK_RIGHT, SDLK_RIGHT);
 
 	InitScreen();
-SDL_Flip(realScreen); //nop90: flipscreen to avoid citra emulator freezing
+	printf("Loading resources. Please wait.\n");
  	InitSound(base_path);
 
 	int videoExposed = 1;
@@ -171,11 +171,11 @@ SDL_Flip(realScreen); //nop90: flipscreen to avoid citra emulator freezing
 	
 videoExposed = 1;
 
-SDL_Flip(realScreen); //nop90: flipscreen to avoid citra emulator freezing
+//SDL_Flip(realScreen); //nop90: flipscreen to avoid citra emulator freezing
 
 	StateMakerBase::GetNew();
 
-SDL_Flip(realScreen); //nop90: flipscreen to avoid citra emulator freezing
+printf("\e[2J\e[H");
 	while(!quitting)
 	{
 		SDL_Event e;

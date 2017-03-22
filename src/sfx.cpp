@@ -29,8 +29,8 @@
 
 static const char* const music_names[HHOP_MUSIC_MAX] =
 {
-	"music-ending-nonfree.ogg",
-	"music-game-nonfree.ogg",
+	"music-ending-nonfree.wav",
+	"music-game-nonfree.wav",
 //	"music-map",
 //	"music-title",
 //	"music-win"
@@ -136,8 +136,9 @@ public:
 			Mix_Music* music = Mix_LoadMUS(name);
 			if (music)
 				music_chunks[i].push_back(music);
-			else
-				fprintf(stderr, "Cannot load music `%s': %s\n", name, Mix_GetError());
+				
+//			else
+//				fprintf(stderr, "Cannot load music `%s': %s\n", name, Mix_GetError());
 		}
 
 		for (i = 0 ; i < HHOP_SOUND_MAX ; i++)
@@ -146,8 +147,8 @@ public:
 			Mix_Chunk* sound = Mix_LoadWAV(name);
 			if (sound)
 				sound_chunks[i].push_back(sound);
-			else
-				fprintf(stderr, "Cannot load effect `%s': %s\n", name, Mix_GetError());
+//			else
+//				fprintf(stderr, "Cannot load effect `%s': %s\n", name, Mix_GetError());
 		}
 		
 	}

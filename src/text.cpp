@@ -325,6 +325,7 @@ void PrintC(bool split, int x, int y, const char * string, ...)
 
 	va_end( marker );              /* Reset variable arguments.      */
 
+/*
 	static bool print = true; // avoid flickering!
 	if (print) {
 		std::cerr << "Warning: don't know window width for message:\n" << tmp << "\n";
@@ -332,6 +333,7 @@ void PrintC(bool split, int x, int y, const char * string, ...)
 			if (!std::isspace(tmp[i]))
 				print = false;
 	}
+*/
 	Print_Aligned(split, x, y, 2*std::min(x, SCREEN_W-x), tmp, 1);
 }
 
@@ -420,6 +422,7 @@ void PrintC(bool split, int x, int y, const char * string, ...)
 
 	va_end( marker );              /* Reset variable arguments.      */
 
+/*
 	static bool print = true; // avoid flickering!
 	if (print) {
 		std::cerr << "Warning: don't know window width for message:\n" << tmp << "\n";
@@ -427,6 +430,7 @@ void PrintC(bool split, int x, int y, const char * string, ...)
 			if (!std::isspace(tmp[i]))
 				print = false;
 	}
+*/
 	Print_Aligned(split, x, y, 2*std::min(x, SCREEN_W-x), tmp, 1);
 }
 

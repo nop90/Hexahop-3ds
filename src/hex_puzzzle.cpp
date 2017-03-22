@@ -81,7 +81,7 @@ const char * mapname = "Levels\\map_maybe\\map.lev";
 #define PATH_MAX 4096 
 #endif 
 
-extern void ScrFlip(void);
+//extern void ScrFlip(void);
 
 void RenderTile(bool reflect, int t, int x, int y, int cliplift=-1);
 
@@ -94,7 +94,7 @@ FILE *file_open( const char *file, const char *flags )
 	static String filename; // static to reduce memory alloc/free calls.
 
 	extern void* realScreen;
-	ScrFlip(); //nop90: flipscreen to avoid citra emulator freezing
+//	ScrFlip(); //nop90: flipscreen to avoid citra emulator freezing
 
 	if (strncmp(file, "save", 4) == 0)
 	{
@@ -103,16 +103,16 @@ FILE *file_open( const char *file, const char *flags )
 	}
 	else
 		filename = base_path + file;
-//	printf("   -> \"%s\"\n", (const char*) filename );
 
-//	filename.fix_backslashes();
+	filename.fix_backslashes();
 	FILE* f = fopen( filename, flags );
 
+/*
 	if (!f && strncmp(file, "save", 4) != 0)
 	{
 		printf("Warning: unable to open file \"%s\" for %s\n", (const char*)filename, strchr(flags, 'r') ? "reading" : "writing");
 	}
-
+*/
 	return f;
 }
 
