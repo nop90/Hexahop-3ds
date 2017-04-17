@@ -3836,7 +3836,7 @@ retry_pos:
 
 			if (keyState[SDLK_UP] && keyState[SDLK_LEFT]) HandleKey('q', 0), usedDiag=1;
 			else if (keyState[SDLK_UP] && keyState[SDLK_RIGHT]) HandleKey('e', 0), usedDiag=1;
-			else if (keyState[SDLK_DOWN] && keyState[SDLK_LEFT]) HandleKey('a', 0), usedDiag=1;
+			else if (keyState[SDLK_DOWN] && keyState[SDLK_LEFT]) HandleKey('f', 0), usedDiag=1;
 			else if (keyState[SDLK_DOWN] && keyState[SDLK_RIGHT]) HandleKey('d', 0), usedDiag=1;
 			else if (keyState[SDLK_UP] && !usedDiag) HandleKey('w', 0);
 			else if (keyState[SDLK_DOWN] && !usedDiag) HandleKey('s', 0);
@@ -3931,11 +3931,12 @@ retry_pos:
 
 		else if (key==SDLK_KP9 || key=='e') Input(1), noMouse=1;
 		else if (key==SDLK_KP3 || key=='d') Input(2), noMouse=1;
-		else if (key==SDLK_KP1 || key=='a') Input(4), noMouse=1;
+		else if (key==SDLK_KP1 || key=='f') Input(4), noMouse=1;
 		else if (key==SDLK_KP7 || key=='q') Input(5), noMouse=1;
 		else if (key==SDLK_KP8 || key=='w') Input(0), noMouse=1;
 		else if (key==SDLK_KP2 || (key=='s' && (((mod & (KMOD_CTRL|KMOD_ALT))==0)||!editMode))) Input(3), noMouse=1;
-		else if (key==SDLK_KP5 || key==SDLK_SPACE || key==SDLK_RETURN || key==SDLK_KP_ENTER || key==SDLK_LCTRL)
+//		else if (key==SDLK_KP5 || key==SDLK_SPACE || key==SDLK_RETURN || key==SDLK_KP_ENTER || key==SDLK_LCTRL)
+		else if (key==SDLK_KP5 || key==SDLK_a || key==SDLK_RETURN || key==SDLK_KP_ENTER || key==SDLK_LCTRL)
 		{
 			noMouse=1;
 			if (win && winFinal)

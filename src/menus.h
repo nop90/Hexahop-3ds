@@ -93,7 +93,7 @@ const char * hint[] = {
 	
 /*EMPTY*/
 //_("Basic controls:|Move around with the keys Q,W,E,A,S,D or the numeric  keypad. Alternatively, you can use the mouse and  click on the tile you'd like to move to.    Use 'U', backspace or the right mouse button to  undo mistakes.    The 'Esc' key (or middle mouse button) brings up a  menu from which you can restart if you get stuck."),
-_("Basic controls:|Move around with the DPAD.  Press the B button to undo mistakes.    The Select button brings up a  menu from which you can restart if you get stuck."),
+_("Basic controls:|Move around with the DPAD.  Press the B button to undo mistakes.    The Y button brings up a  menu from which you can restart if you get stuck."),
 
 
 /*NORMAL*/
@@ -103,7 +103,7 @@ _("Objective:|Your goal is to break all the green tiles.    You mainly do this b
 /*COLLAPSE_DOOR*/
 _("The coloured walls flatten themselves when there  are no matching coloured tiles remaining."),
 /*TRAMPOLINE*/
-_("You can bounce on the purple trampoline tiles to  get around.    But try not to fall in the water.    If you do, remember you can undo with 'U',  backspace or the right mouse button!"),
+_("You can bounce on the purple trampoline tiles to  get around.    But try not to fall in the water.    If you do, remember you can undo with 'B'!"),
 /*SPINNER*/
 _("A red spinner tile will rotate the pieces around  it when you step on it."),
 /*WALL*/
@@ -124,7 +124,7 @@ _("The dark grey tiles with arrows on are builders.    Landing on one creates gr
 0,
 /*FLOATING_BALL*/
 /* TRANSLATORS: pop means vanish and Emy drowns (you loose) */
-_("You can ride on the pink floating boats to get  across water.    They'll pop if you try and float off the edge of the  screen though, so look where you're going."),
+_("You can ride on the pink floating boats to get  across water.    They'll pop if you try and float off the edge of the screen though, so look where you're going."),
 /*LIFT_DOWN*/
 _("The blue lifts go up or down when you land on them."),
 /*LIFT_UP*/
@@ -136,7 +136,7 @@ _("The spiky anti-ice pickups turn icy tiles into blue ones.    They get used au
 //Item 1 (22)
 /* TRANSLATORS: Normally you jump from one plate to another. The golden jump (a
    pickup) allows you to jump and land on the *same* plate */
-_("Collecting the golden jump pickups will allow you to  do a big vertical jump.    Try it out on different types of tiles.    Use the space bar or return key to jump. Or click  on the tile you're currently on with the mouse."),
+_("Collecting the golden jump pickups will allow you to  do a big vertical jump.    Try it out on different types of tiles.    Use the A key to jump."),
 
 0,0,
 
@@ -152,8 +152,7 @@ _("New feature unlocked!|Each level has an efficiency target for you to try  and
 0,0,0,
 
 // End of help (30)
-//_("Thanks for playing this little game.    I hope you  enjoy it!    -- --    All content is Copyright 2005 Tom Beaumont    email: tombeaumont@yahoo.com  Any constructive criticism gratefully received!"),
-_("The red Iwatas sued their own fans...    Still pissed off about it ?    Why don't you watch some child porn instead ?    At least you won't get a DMCA for that.      Gameblabla      ==========    Copyright 2005 Tom Beaumont"),
+_("Thanks for playing this little game.    I hope you  enjoy it!    -- --    All content is Copyright 2005 Tom Beaumont    email: tombeaumont@yahoo.com  Any constructive criticism gratefully received!"),
 
 // First help page (31)
 /* TRANSLATORS: This string is copied twice into the POT file to workaround a

@@ -136,6 +136,7 @@ int main(int /*argc*/, char * /*argv*/[])
 {
 	mkdir("/3ds", 0777);
 	mkdir("/3ds/Hexahop", 0777);
+	osSetSpeedupEnable(true);
 	romfsInit();
 	base_path = GetBasePath();
 
